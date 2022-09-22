@@ -24,6 +24,13 @@
 
 ## Description
 
+이 소스는 아래 인프런 강의를 들으며 작성한 내용입니다. 좋은 내용 공유해주신 강사님께 감사드립니다.
+
+ * [따라하며 배우는 NestJS, 
+John Ahn](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%8A%94-%EB%84%A4%EC%8A%A4%ED%8A%B8-%EC%A0%9C%EC%9D%B4%EC%97%90%EC%8A%A4)
+ * [강사의 완성본 소스](https://github.com/jaewonhimnae/nestjs-board-app)
+
+
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
