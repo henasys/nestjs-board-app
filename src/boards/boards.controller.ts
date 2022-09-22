@@ -5,8 +5,8 @@ import { BoardsService } from './boards.service';
 export class BoardsController {
   constructor(private boardsService: BoardsService) {}
 
-  @Get()
-  getAllTasks() {
+  @Get('/')
+  getAllBoards() {
     return this.boardsService.getAllBoards();
   }
 }
