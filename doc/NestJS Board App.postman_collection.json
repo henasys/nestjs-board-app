@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "c66cc415-642e-4c57-bb39-ec653dfa0349",
+		"_postman_id": "4572c171-2552-4ee4-aacf-a25e9d2cac9d",
 		"name": "NestJS Board App",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "7063662"
+		"_exporter_id": "22781928"
 	},
 	"item": [
 		{
@@ -12,6 +12,16 @@
 				{
 					"name": "Get All Boards",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsZXhsZWUxIiwiaWF0IjoxNjYzOTE4NjE1LCJleHAiOjE2NjM5MjIyMTV9.LMhkL6Xxzi6wtPfRJoIist4pmZqKkr4clc4Yp1-fejQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -53,6 +63,16 @@
 				{
 					"name": "Create Board",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsZXhsZWUxIiwiaWF0IjoxNjYzOTE3MDMzLCJleHAiOjE2NjM5MjA2MzN9.-XEy0B_d8XYlLY8XHioXQxsT1TX0ORR5geFAYUhE38M",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [],
 						"body": {
@@ -79,6 +99,16 @@
 				{
 					"name": "Delete Board",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsZXhsZWUxIiwiaWF0IjoxNjYzOTE4NjE1LCJleHAiOjE2NjM5MjIyMTV9.LMhkL6Xxzi6wtPfRJoIist4pmZqKkr4clc4Yp1-fejQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "DELETE",
 						"header": [],
 						"url": {
@@ -93,7 +123,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "3"
+									"value": "1"
 								}
 							]
 						}
@@ -129,6 +159,93 @@
 									"key": "id",
 									"value": "1"
 								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"alexlee2\",\n    \"password\": \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/signup",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign In",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"alexlee1\",\n    \"password\": \"1234\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/signin",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test AuthGuard",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFsZXhsZWUzIiwiaWF0IjoxNjYzOTEzNjExLCJleHAiOjE2NjM5MTcyMTF9._SMTqCp6PVLkWhYtMR80Fnu7hq1AwKnZJ31zzvars4c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/auth/test",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"test"
 							]
 						}
 					},
