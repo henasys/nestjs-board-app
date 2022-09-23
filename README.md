@@ -26,54 +26,14 @@
 
 이 소스는 아래 인프런 강의를 들으며 작성한 내용입니다. 좋은 내용 공유해주신 강사님께 감사드립니다.
 
- * [따라하며 배우는 NestJS, 
-John Ahn](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%8A%94-%EB%84%A4%EC%8A%A4%ED%8A%B8-%EC%A0%9C%EC%9D%B4%EC%97%90%EC%8A%A4)
- * [강사의 완성본 소스](https://github.com/jaewonhimnae/nestjs-board-app)
+- [인프런, 따라하며 배우는 NestJS,
+  John Ahn](https://www.inflearn.com/course/%EB%94%B0%EB%9D%BC%ED%95%98%EB%8A%94-%EB%84%A4%EC%8A%A4%ED%8A%B8-%EC%A0%9C%EC%9D%B4%EC%97%90%EC%8A%A4)
+- [강사의 완성본 소스](https://github.com/jaewonhimnae/nestjs-board-app)
 
+- [강의 따라하며 작성한 스터디 노트](doc/%EC%9D%B8%ED%94%84%EB%9F%B0_%EB%94%B0%EB%9D%BC%ED%95%98%EB%A9%B0_%EB%B0%B0%EC%9A%B0%EB%8A%94_NestJS.pdf)
+- [Postman test collection json](doc/NestJS%20Board%20App.postman_collection.json)
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
-
-```bash
-$ npm install
-```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
 ## License
 
